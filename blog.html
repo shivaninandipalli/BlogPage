@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header - Blog Title */
+.header {
+  color: blue;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background: rgb(7, 87, 7);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+<style>
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(30, 248, 10);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>
+<style>
+  .container {
+    position: relative;
+    text-align: center;
+    color: blue;
+    font-size: 150px;
+    font-style: sans-serif;
+    text-shadow: 10px 10px 10px black;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="Healthy-Eating.jpeg" style="width:100%;">
+  <div class="centered">Healthy Eating Tips</div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style="color: red">Healthy Lifestyle</h2>
+      <h5>What is a healthy diet?</h5>
+      <img src="balanceddiet.jpg" width="800" height="450" padding="20px">
+      <p>Confused by the diverse nutrition recommendations available? You can learn how to organize, enjoy and maintain a healthy diet with these easy pointers.</p>
+      <p>Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love.Rather it's about feeling great, having more energy, improving your health and boosting your mood.
+        By using these simple tips, you can cut through the confusion and learn how to create and stick to a tasty, varied and nutritious diet that is as good for your mind as it is for your body.</p>
+    </div>
+    <div class="card">
+      <h2 style="color: red">Making the switch to a healthy diet</h2>
+      <h5>Setting yourself up for success</h5>
+      <img src="switchdiet.jpg" width="800" height="350" padding="20px">
+      <p>To set yourself up for success, try to keep things simple.Eating a healthier diet doesn't have to be complicated.Instead of being overly concernced with counting calories, focus on avoiding packaged and proccessed foods and opting more fresh ingredients whenever possible.</p>
+      <p>1.Prepare more of your own meals - This can help you to take charge of what you're eating and better monitor exactly what goes into your food.</p>
+      <p>2.Drink plenty of water - Water helps flush our systems of waste prodcuts and toxins, so staying well hydrated will also help you make healthier food choices.</p>
+      <p>3.Read the labels - It's important to be aware of what's in your food as manufacturers often hide large amount of sugar or unhelathy fats in pacakged foods.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2 style="color: red">About Us</h2>
+      <p>Meet our team</p>
+      <p>Our story</p>
+    </div>
+    <div class="card">
+      <h3 style="color: red">More in healthy eating</h3>
+      <a style="text-decoration:none;" href="https://www.helpguide.org/articles/healthy-eating/cooking-at-home.htm" target="_blank">Cooking at home</a>
+      <p style="color: grey">how to get started in preparing more home-cooked meals</p>
+      <img src="Cooking-at-Home.jpeg" width="250" height="150" padding="20px"><br><br>
+      <a style="text-decoration:none;" href="https://www.helpguide.org/articles/healthy-eating/organic-foods.htm" target="_blank">Organic Foods</a>
+      <p style="color: grey">The benefits of organic food and how to keep it affordable</p>
+      <img src="Organic foods.webp" width="250" height="150" padding="20px"><br><br>
+      <a style="text-decoration:none;" href="https://www.helpguide.org/harvard/vitamins-and-minerals.htm" target="_blank">Vitamins and Minerals</a>
+      <p style="color: grey">Are you getting what you need?</p>
+      <img src="vitaminsandmin.jpg" width="250" height="150" padding="20px"><br>
+    </div>
+    <div class="card">
+      <h3 style="color: red">More Categories</h3>
+      <a style="text-decoration:none;" href="https://youaligned.com/yoga/" target="_blank">Yoga</a>
+      <p><a style="text-decoration:none;" href="https://youaligned.com/fitness/" target="_blank">Fitness</a></p>
+      <p><a style="text-decoration:none;" href="https://youaligned.com/nutrition/" target="_blank">Nutrition</a></p>
+      <p><a style="text-decoration:none;" href="https://youaligned.com/beauty/" target="_blank">Beauty</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Dietguide.org</h2>
+  <p>copyright@2023 Dietguide,Inc.</p>
+  <p>legat stuff | privacypolicy | security</p>
+  <button>SUBSCRIBE</button>
+</div>
+
+</body>
+</html>
